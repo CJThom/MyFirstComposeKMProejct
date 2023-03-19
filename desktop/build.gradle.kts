@@ -1,3 +1,5 @@
+import org.jetbrains.compose.desktop.application.dsl.TargetFormat
+
 plugins {
     kotlin("multiplatform")
     // id("org.jetbrains.compose")
@@ -20,8 +22,8 @@ kotlin {
     sourceSets {
         val jvmMain by getting {
 //            kotlin.srcDir("build/generated/ksp/main/kotlin")
-           // kotlin.srcDir(File("build/generated/ksp/desktopMain/kotlin"))
-           // kotlin.srcDir("build/generated/ksp/jvm/jvmMain/kotlin")
+            // kotlin.srcDir(File("build/generated/ksp/desktopMain/kotlin"))
+            // kotlin.srcDir("build/generated/ksp/jvm/jvmMain/kotlin")
             dependencies {
                 implementation(project(":common"))
 //                implementation("org.jetbrains.compose.desktop:desktop:1.3.1")
@@ -34,7 +36,7 @@ kotlin {
                 implementation(compose.desktop.currentOs)
                 implementation("io.insert-koin:koin-core:3.3.3")
 
-               // implementation("io.insert-koin:koin-annotations:1.1.1")
+                // implementation("io.insert-koin:koin-annotations:1.1.1")
                 //api(compose.runtime)
                 // api(compose.foundation)
                 // api(compose.material)
@@ -48,7 +50,7 @@ kotlin {
 //                implementation("androidx.compose.ui:ui:1.3.3")
             }
         }
-        val jvmTest by getting
+        //val jvmTest by getting
     }
 }
 
@@ -58,9 +60,9 @@ compose.desktop {
         mainClass = "MainKt"
         nativeDistributions {
             targetFormats(
-                org.jetbrains.compose.desktop.application.dsl.TargetFormat.Dmg,
-                org.jetbrains.compose.desktop.application.dsl.TargetFormat.Msi,
-                org.jetbrains.compose.desktop.application.dsl.TargetFormat.Deb
+                TargetFormat.Dmg,
+                TargetFormat.Msi,
+                TargetFormat.Deb
             )
             packageName = "MyFirstKMMDesktopApp"
             packageVersion = "1.0.0"

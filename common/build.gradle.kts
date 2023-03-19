@@ -18,7 +18,8 @@ kotlin {
         val commonMain by getting {
 
             dependencies {
-                implementation(project(":data"))
+                implementation(project(":core:data"))
+                implementation(project(":core:domain"))
 
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
 

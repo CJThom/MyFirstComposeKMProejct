@@ -14,7 +14,7 @@ import androidx.compose.ui.unit.dp
 import com.example.common.widget.Item
 import com.example.common.widget.VerticalScrollbar
 import com.example.common.widget.rememberScrollbarAdapter
-import com.example.data.common.sqldelight.database.HockeyPlayer
+import com.example.domain.common.sqldelight.database.HockeyPlayer
 
 @Composable
 fun App(
