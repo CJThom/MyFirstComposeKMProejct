@@ -11,13 +11,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
-import com.example.Database
-import com.example.common.sqldelight.database.HockeyPlayer
 import com.example.common.widget.Item
 import com.example.common.widget.VerticalScrollbar
 import com.example.common.widget.rememberScrollbarAdapter
-
-import org.koin.core.component.inject
+import com.example.data.common.sqldelight.database.HockeyPlayer
 
 @Composable
 fun App(
@@ -25,7 +22,7 @@ fun App(
     platform: Platform,
     hockeyPlayerList: List<HockeyPlayer>,
 
-) {
+    ) {
 
     var isSearchVisible by remember { mutableStateOf(false) }
     //  val platformName = getPlatformName()

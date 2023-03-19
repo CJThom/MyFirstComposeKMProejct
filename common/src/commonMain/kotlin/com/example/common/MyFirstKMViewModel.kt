@@ -1,9 +1,8 @@
 package com.example.common
 
-import com.example.common.domain.repository.HockeyPlayerRepository
-import com.example.common.domain.usecase.GetAllHockeyPlayerListUseCase
-import com.example.common.sqldelight.database.HockeyPlayer
 import com.example.common.util.KMViewModel
+import com.example.data.common.domain.usecase.GetAllHockeyPlayerListUseCase
+import com.example.data.common.sqldelight.database.HockeyPlayer
 
 class MyFirstKMViewModel(
     private val getAllHockeyPlayerListUseCase: GetAllHockeyPlayerListUseCase,

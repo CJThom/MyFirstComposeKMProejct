@@ -2,7 +2,6 @@ package com.example.common.di
 
 
 import com.example.common.MyFirstKMViewModel
-import org.koin.core.context.startKoin
 import org.koin.dsl.module
 
 actual fun viewModelModule() = module {

@@ -34,6 +34,7 @@ pluginManagement {
 
 rootProject.name = "MyFirstKMMDesktopApp"
 
-//include(":android", ":desktop", ":common", ":test-processor")
-include(":android", ":desktop", ":common")
-//include(":kotlinmultiplatformsharedmodule")
+include(":android")
+include(":desktop")
+include(":common")
+include(":data")
