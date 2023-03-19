@@ -20,7 +20,7 @@ kotlin {
             dependencies {
               //  implementation(project(":core:data"))
                 implementation(project(":core:domain"))
-
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
                 implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.4.0")
 
                 implementation("io.insert-koin:koin-core:3.3.3")
@@ -40,6 +40,8 @@ kotlin {
         val androidMain by getting {
             dependencies {
                 //dependsOn(commonMain)
+             //   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
                 api("androidx.appcompat:appcompat:1.6.1")
                 api("androidx.core:core-ktx:1.9.0")
                 implementation("app.cash.sqldelight:android-driver:2.0.0-alpha05")
@@ -58,6 +60,7 @@ kotlin {
 //        }
         val desktopMain by getting {
             dependencies {
+                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4")
                 implementation("app.cash.sqldelight:sqlite-driver:2.0.0-alpha05")
                 implementation("io.insert-koin:koin-core:3.3.3")
 

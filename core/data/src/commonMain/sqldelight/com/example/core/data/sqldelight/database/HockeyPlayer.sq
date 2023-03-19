@@ -36,10 +36,19 @@ selectAll:
 SELECT *
 FROM hockeyPlayerEntity;
 
+deleteAll:
+DELETE FROM hockeyPlayerEntity;
+
+-- deletelHockeyPlayerByFullName:
+-- DELETE FROM hockeyPlayerEntity WHERE  full_name = ?;
+--
+-- deleteFullHockeyPlayerObject:
+-- DELETE FROM hockeyPlayerEntity WHERE hockeyPlayerEntity(player_number, full_name) = ?;
+
 insert:
-INSERT INTO hockeyPlayerEntity(player_number, full_name)
+INSERT OR REPLACE INTO hockeyPlayerEntity(player_number, full_name)
 VALUES (?, ?);
 
 insertFullPlayerObject:
-INSERT INTO hockeyPlayerEntity(player_number, full_name)
+INSERT OR REPLACE INTO hockeyPlayerEntity(player_number, full_name)
 VALUES ?;

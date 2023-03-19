@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material.MaterialTheme
+import androidx.compose.runtime.collectAsState
 import androidx.compose.ui.Modifier
 import com.example.core.presentation.App
 import com.example.core.presentation.MyFirstKMViewModel
@@ -30,9 +31,11 @@ class MainActivity : AppCompatActivity() {
 
                 val myFirstKMViewModel: MyFirstKMViewModel = koinViewModel()
 
+                val hockeyPlayerList = myFirstKMViewModel.hockeyPlayerListFlow.collectAsState(initial = emptyList()).value
+
                 App(
                     modifier = Modifier,
-                    hockeyPlayerList = myFirstKMViewModel.hockeyPlayerList,
+                    hockeyPlayerList = hockeyPlayerList,
                     platform = myFirstKMViewModel.platform
                 )
             }

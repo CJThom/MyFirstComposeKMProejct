@@ -87,6 +87,7 @@ dependencies {
     implementation(project(":core:data"))
     implementation(project(":core:domain"))
     implementation(project(":core:presentation"))
+    implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4")
 
     implementation("androidx.activity:activity-compose:1.6.1")
     implementation("app.cash.sqldelight:android-driver:2.0.0-alpha05")

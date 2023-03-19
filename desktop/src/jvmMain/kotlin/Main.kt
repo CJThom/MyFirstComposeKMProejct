@@ -56,6 +56,7 @@ private fun ApplicationScope.MyWindow(
 
             val myFirstKMViewModel: MyFirstKMViewModel = ViewModelHelper().viewModel
 
+            val hockeyPlayerList = myFirstKMViewModel.hockeyPlayerListFlow.collectAsState(emptyList()).value
 //            App(
 //                modifier = Modifier,
 //                platform = ViewModelHelper().platform,
@@ -64,8 +65,9 @@ private fun ApplicationScope.MyWindow(
             App(
                 modifier = Modifier,
                 platform = myFirstKMViewModel.platform,
-                hockeyPlayerList = myFirstKMViewModel.hockeyPlayerList
+                hockeyPlayerList = hockeyPlayerList
             )
+
             Box(Modifier.size(200.dp).background(Color.DarkGray))
 
             if (isAskingToClose) {
