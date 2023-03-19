@@ -1,6 +1,6 @@
+import com.example.core.data.di.coreDataModule
+import com.example.core.domain.di.coreDomainModule
 import com.example.core.presentation.di.corePresentationModule
-import com.example.data.common.di.coreDataModule
-import com.example.domain.common.di.coreDomainModule
 import org.koin.core.module.Module
 
 fun coreModule(): List<Module> = listOf(

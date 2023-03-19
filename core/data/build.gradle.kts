@@ -51,14 +51,14 @@ android {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
     }
-    namespace = "com.example.data.presentation"
+    namespace = "com.example.core.data"
 
 }
-//
-//sqldelight {
-//    databases {
-//        create("Database") {
-//            packageName.set("com.example.data")
-//        }
-//    }
-//}
+
+sqldelight {
+    databases {
+        create("Database") {
+            packageName.set("com.example.core.data")
+        }
+    }
+}

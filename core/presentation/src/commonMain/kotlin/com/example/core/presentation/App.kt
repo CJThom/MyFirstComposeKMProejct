@@ -11,10 +11,10 @@ import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import com.example.core.domain.model.HockeyPlayer
 import com.example.core.presentation.widget.Item
 import com.example.core.presentation.widget.VerticalScrollbar
 import com.example.core.presentation.widget.rememberScrollbarAdapter
-import com.example.domain.common.sqldelight.database.HockeyPlayer
 
 @Composable
 fun App(
@@ -66,7 +66,7 @@ fun App(
 
                 items(hockeyPlayerList) { player ->
                     Item(
-                        text = "${player.full_name}: ${player.player_number}",
+                        text = "${player.fullName}: ${player.playerNumber}",
                         modifier = Modifier.padding(8.dp)
                     )
                 }

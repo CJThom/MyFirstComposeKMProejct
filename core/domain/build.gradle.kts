@@ -37,10 +37,3 @@ android {
 }
 
 
-sqldelight {
-    databases {
-        create("Database") {
-            packageName.set("com.example.domain")
-        }
-    }
-}
