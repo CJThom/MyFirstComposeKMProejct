@@ -36,7 +36,7 @@ rootProject.name = "MyFirstKMMDesktopApp"
 
 include(":android")
 include(":desktop")
-include(":common")
 
+include(":core:presentation")
 include(":core:data")
 include(":core:domain")

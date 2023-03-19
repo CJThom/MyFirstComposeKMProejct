@@ -25,7 +25,11 @@ kotlin {
             // kotlin.srcDir(File("build/generated/ksp/desktopMain/kotlin"))
             // kotlin.srcDir("build/generated/ksp/jvm/jvmMain/kotlin")
             dependencies {
-                implementation(project(":common"))
+
+                implementation(project(":core:data"))
+                implementation(project(":core:domain"))
+                implementation(project(":core:presentation"))
+                
 //                implementation("org.jetbrains.compose.desktop:desktop:1.3.1")
 //
 //                implementation("androidx.compose.runtime:runtime:1.3.3")

@@ -1,6 +1,6 @@
-//package com.example.data.common.domain.repository
+//package com.example.data.presentation.domain.repository
 //
-//import com.example.data.common.sqldelight.database.HockeyPlayer
+//import com.example.data.presentation.sqldelight.database.HockeyPlayer
 //
 //interface HockeyPlayerRepository {
 //

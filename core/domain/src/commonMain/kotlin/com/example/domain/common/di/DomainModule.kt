@@ -1,5 +1,5 @@
 package com.example.domain.common.di
 
-fun domainModule() = listOf(
+fun coreDomainModule() = listOf(
     useCaseModule,
 )

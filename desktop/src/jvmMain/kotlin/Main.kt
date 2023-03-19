@@ -8,10 +8,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.window.*
-import com.example.common.App
-import com.example.common.MyFirstKMViewModel
-import com.example.common.Platform
-import com.example.common.di.Helper
+import com.example.core.presentation.App
+import com.example.core.presentation.MyFirstKMViewModel
+import di.Helper
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
 
@@ -34,7 +33,7 @@ private fun WindowScope.AppWindowTitleBar() = WindowDraggableArea {
     Box(Modifier.fillMaxWidth().height(48.dp).background(Color.DarkGray))
 }
 
-// Injection Boostrap Helper
+// Injection Boostrap di.Helper
 class ViewModelHelper : KoinComponent {
     val viewModel: MyFirstKMViewModel by inject()
 }

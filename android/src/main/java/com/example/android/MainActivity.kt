@@ -4,12 +4,10 @@ import android.os.Bundle
 import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.material.MaterialTheme
-import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.example.common.App
-import com.example.common.MyFirstKMViewModel
+import com.example.core.presentation.App
+import com.example.core.presentation.MyFirstKMViewModel
 import org.koin.androidx.compose.koinViewModel
-import org.koin.androidx.viewmodel.ext.android.viewModel
 
 //val androidModule = module {
 //    single { MyFirstKMViewModel() }

@@ -1,6 +1,6 @@
 package com.example.data.common.di
 
-fun dataModule() = listOf(
+fun coreDataModule() = listOf(
     databaseModule(),
     repositoryModule
 )

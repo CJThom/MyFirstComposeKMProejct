@@ -1,7 +1,7 @@
-//package com.example.data.common.domain.usecase
+//package com.example.data.presentation.domain.usecase
 //
-//import com.example.data.common.domain.repository.HockeyPlayerRepository
-//import com.example.data.common.sqldelight.database.HockeyPlayer
+//import com.example.data.presentation.domain.repository.HockeyPlayerRepository
+//import com.example.data.presentation.sqldelight.database.HockeyPlayer
 //
 //class GetAllHockeyPlayerListUseCase(
 //    private val hockeyPlayerRepository: HockeyPlayerRepository,
